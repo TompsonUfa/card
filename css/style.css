@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Love Ya Like A Sister", cursive;
+}
+body {
+  background: url("/bg.jpg") no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 100%;
+  box-shadow: #ff0a27a6 0px 7px 29px 0px;
+  display: flex;
+}
+.img {
+  width: 60%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+}
+.img > img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+}
+.content {
+  background: #f6b7be;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content__text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content__title {
+  width: 100%;
+  margin-bottom: 15px;
+  color: #3c3c3b;
+  font-size: 40px;
+}
+
+.content__descriptions {
+  width: 100%;
+  color: #3c3c3b;
+  font-size: 24px;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    height: 100vh;
+  }
+  .card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .content__text {
+    width: 100%;
+    padding: 40px;
+  }
+  .content__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .content__descriptions {
+    font-size: 13px;
+  }
+  .img {
+    width: 100%;
+  }
+  .img > img {
+  }
+  .content {
+    width: 100%;
+    background: #f6b7beb6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
